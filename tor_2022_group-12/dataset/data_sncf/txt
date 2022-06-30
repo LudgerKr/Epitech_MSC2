@@ -1,0 +1,5 @@
+routes.txt récupérer le route ID -> trips.txt avec, récupérer le trip ID ->
+stop_times, avec, récupérer le stop ID -> stops.txt, avec,  Récupérer le stop name
+
+
+Trips.txt si direction_id = 1, départ - arrivée; si 0 c'est l'inverse

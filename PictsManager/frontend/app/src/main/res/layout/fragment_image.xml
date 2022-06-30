@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ImageFragment">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70sp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="125sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60sp"
+        android:layout_marginBottom="10sp"
+        android:text="@string/edit"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="125sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="60sp"
+        android:layout_marginBottom="10sp"
+        android:text="@string/save"
+        android:background="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/edit_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="25sp"
+        android:layout_marginVertical="75sp"
+        android:background="@drawable/border"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/txt_width"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+            android:layout_margin="25sp"
+            android:textSize="25sp"
+            android:text="@string/width"/>
+        <EditText
+            android:id="@+id/edit_width"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+            android:layout_margin="25sp"
+            android:layout_toEndOf="@+id/txt_width"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/txt_height"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+            android:layout_margin="25sp"
+            android:layout_below="@+id/txt_width"
+            android:textSize="25sp"
+            android:text="@string/height"/>
+        <EditText
+            android:id="@+id/edit_height"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+            android:layout_margin="25sp"
+            android:layout_below="@+id/edit_width"
+            android:layout_toEndOf="@+id/txt_height"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/txt_quality"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+            android:layout_margin="25sp"
+            android:layout_below="@+id/txt_height"
+            android:textSize="25sp"
+            android:text="@string/quality"/>
+        <EditText
+            android:id="@+id/edit_quality"
+            android:layout_width="150sp"
+            android:layout_height="30sp"
+            android:layout_margin="25sp"
+            android:layout_below="@+id/edit_height"
+            android:layout_toEndOf="@+id/txt_quality"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/rotateLeft"
+            android:layout_width="125sp"
+            android:layout_height="75sp"
+            android:layout_below="@+id/txt_quality"
+            android:layout_alignParentStart="true"
+            android:layout_margin="25sp"
+            android:padding="12dp"
+            android:text="Left Rotation 90"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/rotateRight"
+            android:layout_width="125sp"
+            android:layout_height="75sp"
+            android:layout_below="@+id/txt_quality"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="25sp"
+            android:padding="12dp"
+            android:text="Right Rotation 90"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/redFilter"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_below="@id/rotateLeft"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20sp"
+            android:text="Rouge"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/blueFilter"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_below="@id/rotateLeft"
+            android:layout_centerHorizontal="true"
+            android:text="Bleu"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/greenFilter"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_below="@id/rotateLeft"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20sp"
+            android:text="Vert"
+            android:textColor="@android:color/white" />
+
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="125sp"
+            android:layout_height="50sp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/redFilter"
+            android:layout_margin="20sp"
+            android:text="RESET"
+            android:textColor="@android:color/white" />
+
+
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="125sp"
+            android:layout_height="50sp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/redFilter"
+            android:layout_margin="20sp"
+            android:text="EDIT IMAGE"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

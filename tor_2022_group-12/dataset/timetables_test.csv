@@ -1,0 +1,17 @@
+TripId,Departure,Destination,Duration
+OCESN895802F0700752546,Gare de Vittel,Gare de Paris-Montparnasse 1-2,186
+OCESN895819F0300352564,Gare de Vittel,Gare de toto,5
+OCESN895820F0900952566,Gare de Vittel,Gare de Paris-Montp.3-Vaug.,103
+OCESN895820F1801852568,Gare de Vittel,Gare de Paris-St-Lazare,144
+OCESN895822F0500552575,Gare de Vittel,Gare de Paris Gare du Nord,89
+OCESN895830F0200252600,Gare de Vittel,Gare de Paris Gare du Nord,81
+OCESN895880F0500552634,Gare de Vittel,Gare de Paris-Est,64
+OCESN895940F0200252654,Gare de toto,Gare de Paris-Austerlitz,24
+OCESN886295F0200250552,Gare de Paris-Montparnasse 1-2,Gare de Marseille,186
+OCESN886401F0200250553,Gare de Paris Gare du Sud,Gare de Toulouse,5
+OCESN886407F0600650559,Gare de Paris-Montp.3-Vaug.,Gare de Marseille,103
+OCESN886415F0100150564,Gare de Paris-St-Lazare,Gare de Marseille,144
+OCESN886461F0200250566,Gare de Paris Gare du Nord,Gare de Marseille,89
+OCESN886602F0100150569,Gare de Paris Gare du Nord,Gare de Marseille,81
+OCESN886700F0500550628,Gare de Paris-Est,Gare de Marseille,64
+OCESN886702F0800850635,Gare de Toulouse,Gare de Marseille,24

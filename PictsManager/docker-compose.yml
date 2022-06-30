@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+
+# front
+  frontend:
+    container_name: docker_apk
+    build: ./frontend
+    restart: always
+    ports:
+      - '8081:80'
+    volumes:
+      - apkFolder:/home/frontend/app/build/outputs/apk/debug/
+
+# server
+  backend:
+    container_name: docker_java_spring_boot
+    build: ./backend/manager
+    restart: always
+    ports:
+      - '8080:8080'
+    depends_on:
+      - mysqldb
+    volumes:
+      - apkFolder:/usr/app/apk/
+ 
+# database 
+  mysqldb:
+    container_name: docker_mysql
+    image: mysql:8
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_HOST=localhost
+      - MYSQL_PORT=3306
+      - MYSQL_USER=richard
+      - MYSQL_PASSWORD=richard
+      - MYSQL_DATABASE=project_manager
+    volumes:
+      - "./volumes/mysql:/var/lib/mysql"
+
+volumes:
+  apkFolder:

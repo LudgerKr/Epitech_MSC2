@@ -1,0 +1,55 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "17.0"
+        }
+    },
+    "plugins": ["react", "react-hooks", "@typescript-eslint"],
+    "env": {
+        "es6": true,
+        "browser": true,
+        "jest": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "eslint-config-prettier"
+    ],
+    "rules": {
+        "arrow-body-style": ["error", "as-needed"],
+        "eqeqeq": "error",
+        "jsx-quotes": ["error", "prefer-double"],
+        "no-alert": "error",
+        "no-bitwise": "error",
+        "no-duplicate-imports": "error",
+        "no-else-return": "error",
+        "no-self-compare": "error",
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "error",
+        "semi": "off",
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error",
+        "react/react-in-jsx-scope": 0,
+        "@typescript-eslint/no-non-null-assertion": "off"
+    },
+    "overrides": [
+        {
+            "files": ["*.test.js"],
+            "rules": {
+                "react/prop-types": 0,
+                "react/display-name": 0
+            }
+        }
+    ]
+}
